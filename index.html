@@ -5,61 +5,171 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpendSense — find out which purchases were worth it</title>
   <meta name="description" content="A free Chrome extension to log your purchases, rate them after using them, and learn which ones were really worth the money. Private: your data never leaves your browser.">
+  <meta property="og:title" content="SpendSense — find out which purchases were worth it">
+  <meta property="og:description" content="Log what you buy, rate it weeks later, and learn where your money is well spent. Free and private Chrome extension.">
+  <meta property="og:image" content="https://guigui34-ship-it.github.io/spendsense-site/images/overview-light.png">
   <link rel="icon" href="images/icon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="wrap">
-    <header class="site">
-      <a class="logo" href="./"><img src="images/icon.png" alt="">SpendSense</a>
-      <nav>
+  <header class="site">
+    <div class="wrap bar">
+      <a class="logo" href="./"><img src="images/icon.png" alt="" width="34" height="34">SpendSense</a>
+      <nav aria-label="Main">
+        <a href="#how">How it works</a>
         <a href="#features">Features</a>
         <a href="privacy.html">Privacy</a>
+        <a class="btn btn-small" href="https://chromewebstore.google.com/search/SpendSense">Add to Chrome</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
+  <main>
     <section class="hero">
-      <h1>Find out which purchases were <em>worth it</em></h1>
-      <p>SpendSense is a free Chrome extension that tracks what you buy and how you feel about it weeks later — so you buy less and enjoy more.</p>
-      <a class="cta" href="https://chromewebstore.google.com/search/SpendSense">Add to Chrome — it's free</a>
-      <span class="note">No account. No servers. Your data stays in your browser.</span>
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Free Chrome extension · No account needed</span>
+          <h1>Find out which purchases were <em>worth it</em></h1>
+          <p class="lead">SpendSense tracks what you buy and asks how you feel about it weeks later. You'll see your best buys, your regrets, and where your money is really well spent.</p>
+          <div class="actions">
+            <a class="btn" href="https://chromewebstore.google.com/search/SpendSense">Add to Chrome — it's free</a>
+            <a class="btn btn-ghost" href="#how">See how it works</a>
+          </div>
+          <ul class="trust">
+            <li>🔒 Data stays in your browser</li>
+            <li>🌙 Light &amp; dark mode</li>
+            <li>💶 10 currencies</li>
+          </ul>
+        </div>
+        <div class="hero-art">
+          <picture>
+            <source srcset="images/overview-dark.png" media="(prefers-color-scheme: dark)">
+            <img src="images/overview-light.png" width="460" height="690" alt="The SpendSense popup: €435 spent this month, an average rating of 3.4 stars, and three purchases waiting for a rating">
+          </picture>
+        </div>
+      </div>
     </section>
 
-    <img class="shot" src="images/screenshot-1-overview.png" width="1280" height="800" alt="The SpendSense popup showing monthly spending, average rating and purchases waiting for a rating">
+    <section class="how" id="how">
+      <div class="wrap">
+        <h2 class="section-title">How it works</h2>
+        <ol class="steps">
+          <li>
+            <span class="num">1</span>
+            <h3>Log a purchase</h3>
+            <p>Add it in two seconds, or let SpendSense spot your order on supported stores.</p>
+          </li>
+          <li>
+            <span class="num">2</span>
+            <h3>Use it for a while</h3>
+            <p>A reminder arrives 7, 30 and 90 days later, once you actually know.</p>
+          </li>
+          <li>
+            <span class="num">3</span>
+            <h3>Rate it honestly</h3>
+            <p>One to five stars, plus a note on what made it worth it — or not.</p>
+          </li>
+          <li>
+            <span class="num">4</span>
+            <h3>Learn your patterns</h3>
+            <p>See which kinds of purchases make you happy and which you regret.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
 
     <section class="features" id="features">
-      <div class="feature">
-        <div class="icon" aria-hidden="true">🛒</div>
-        <h3>Log in seconds</h3>
-        <p>Add a purchase by hand, or let SpendSense spot your order on Amazon, Fnac, Decathlon, Zalando and other supported stores.</p>
-      </div>
-      <div class="feature">
-        <div class="icon" aria-hidden="true">⭐</div>
-        <h3>Rate it later</h3>
-        <p>Reminders 7, 30 and 90 days after each purchase ask one question: was it worth the money?</p>
-      </div>
-      <div class="feature">
-        <div class="icon" aria-hidden="true">📊</div>
-        <h3>Learn your patterns</h3>
-        <p>See your best buys, your regrets, how much went to purchases you regret, and where your money goes.</p>
-      </div>
-      <div class="feature">
-        <div class="icon" aria-hidden="true">🔒</div>
-        <h3>Private by design</h3>
-        <p>Everything is stored locally in your browser. Back up, export to CSV or delete your data anytime.</p>
+      <div class="wrap">
+        <article class="feature">
+          <div class="feature-copy">
+            <span class="eyebrow">Rate later</span>
+            <h2>Rate it once you've actually used it</h2>
+            <p>The excitement of buying fades. SpendSense asks again after a week, a month and three months, when your opinion is honest.</p>
+            <ul class="checks">
+              <li>One-tap star ratings with undo</li>
+              <li>Short notes on what made it worth it</li>
+              <li>Reminders you can snooze or turn off</li>
+            </ul>
+          </div>
+          <div class="feature-art">
+            <picture>
+              <source srcset="images/rate-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="images/rate-light.png" width="460" height="690" loading="lazy" alt="Rating wireless headphones four stars with the note “Great sound, I wear them on every commute”">
+            </picture>
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-copy">
+            <span class="eyebrow">Automatic detection</span>
+            <h2>Spots your orders for you</h2>
+            <p>When you finish an order on a supported store, a small card offers to log it. Check the name and total, then track it in one click.</p>
+            <ul class="checks">
+              <li>Amazon, Fnac, Decathlon, Zalando, Etsy, AliExpress, Cdiscount, Apple, Booking.com</li>
+              <li>Finds the order total, not the subtotal</li>
+              <li>Never appears on product or cart pages</li>
+            </ul>
+          </div>
+          <div class="feature-art wide">
+            <img src="images/detect.png" width="840" height="580" loading="lazy" alt="A store's order confirmation page with the SpendSense “Purchase detected” card pre-filled with Trail running shoes, €129.90">
+          </div>
+        </article>
+
+        <article class="feature">
+          <div class="feature-copy">
+            <span class="eyebrow">History</span>
+            <h2>Everything you've bought, organised</h2>
+            <p>Search, filter and sort your purchases. Monthly totals show how your spending changes over time.</p>
+            <ul class="checks">
+              <li>Filters for purchases to rate, loved ones and regrets</li>
+              <li>Spending by category</li>
+              <li>Export to a spreadsheet (CSV) anytime</li>
+            </ul>
+          </div>
+          <div class="feature-art">
+            <picture>
+              <source srcset="images/list-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="images/list-light.png" width="460" height="690" loading="lazy" alt="The purchase list grouped by month, with search, filters and ratings">
+            </picture>
+          </div>
+        </article>
+
+        <article class="feature reverse">
+          <div class="feature-copy">
+            <span class="eyebrow">Private by design</span>
+            <h2>Your data never leaves your browser</h2>
+            <p>No account, no servers, no analytics, no ads. Your purchases are stored locally, and you stay in control of them.</p>
+            <ul class="checks">
+              <li>Back up and restore in one click</li>
+              <li>Delete everything whenever you want</li>
+              <li><a href="privacy.html">Read the privacy policy</a></li>
+            </ul>
+          </div>
+          <div class="feature-art">
+            <picture>
+              <source srcset="images/settings-dark.png" media="(prefers-color-scheme: dark)">
+              <img src="images/settings-light.png" width="460" height="690" loading="lazy" alt="SpendSense settings: currency, reminders, purchase detection, backup and export">
+            </picture>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="gallery" aria-label="Screenshots">
-      <img class="shot" src="images/screenshot-2-rate.png" width="1280" height="800" loading="lazy" alt="Rating a purchase with stars and a short note">
-      <img class="shot" src="images/screenshot-4-detection.png" width="1280" height="800" loading="lazy" alt="SpendSense offering to track an order on a store's confirmation page">
-      <img class="shot" src="images/screenshot-3-purchases.png" width="1280" height="800" loading="lazy" alt="Searchable purchase history grouped by month">
-      <img class="shot" src="images/screenshot-5-privacy.png" width="1280" height="800" loading="lazy" alt="SpendSense settings in dark mode">
+    <section class="closing">
+      <div class="wrap closing-card">
+        <img src="images/icon.png" alt="" width="64" height="64">
+        <h2>Buy less. Enjoy more.</h2>
+        <p>Free, private, and takes ten seconds to install.</p>
+        <a class="btn" href="https://chromewebstore.google.com/search/SpendSense">Add SpendSense to Chrome</a>
+      </div>
     </section>
+  </main>
 
-    <footer>
-      © 2026 SpendSense · <a href="privacy.html">Privacy policy</a>
-    </footer>
-  </div>
+  <footer>
+    <div class="wrap bar">
+      <span>© 2026 SpendSense</span>
+      <span><a href="privacy.html">Privacy policy</a></span>
+    </div>
+  </footer>
 </body>
 </html>
